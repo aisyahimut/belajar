@@ -167,16 +167,30 @@ untuk melihat apakah sudah terhubung konfigurasi git nya silakan ketik  git conf
 ~~~
    Ganti username dan nama-repository dengan nama pengguna GitHub Anda dan nama repositori yang Anda buat.kalo dah ada tulisan (master),berarti sudah terhubung ke repositori Githubnya
    **contohnya:
+![](assets/gitremote.png)
 
+#  Git Status
+**Penjelasan:`git status` adalah perintah dalam sistem kontrol versi Git yang digunakan untuk menampilkan status dari repository Git saat ini. Perintah ini memberikan informasi mengenai:
+1. **Perubahan yang telah dilakukan:** Menunjukkan file-file yang telah diubah, tetapi belum di-stage untuk commit.
+2. **File yang di-stage:** Menunjukkan file-file yang telah di-stage dan siap untuk di-commit.
+3. **File yang belum dilacak:** Menunjukkan file-file baru yang belum ditambahkan ke dalam repository.
+
+Dengan menggunakan `git status`, Kita dapat melihat status dari repository Kita, memahami apa yang telah berubah, dan memutuskan tindakan selanjutnya, seperti menambahkan file ke staging area atau melakukan commit perubahan.
+
+**Hasilnya :
+
+![](assets/status2.png)
+![](assets/gitstatus.png)
 
 5.**Tambahkan file ke repositori: 
    - Perintah ini akan menambahkan semua file di direktori saat ini ke repositori.
    - Tambahkan file yang ingin Anda simpan di repositori Git dengan menjalankan perintah:
 ~~~cs
-     git add .
+    git add .
 ~~~    
    **contohnya:
 
+![](assets/gitadd.png)
 6.**Buat Commit:
    - Jalankan perintah berikut untuk membuat commit dengan pesan yang jelas:
    - Perintah git commit -m *"Pesan commit"* digunakan untuk menyimpan perubahan yang telah dilakukan pada repositori Git dengan menambahkan pesan
@@ -184,7 +198,9 @@ untuk melihat apakah sudah terhubung konfigurasi git nya silakan ketik  git conf
      git commit -m "Pesan commit"
 ~~~   
    **contohnya:
-   
+
+![](assets/gitcommit.png)
+
    Unggah ke GitHub (git push origin master) :
    Terakhir, jalankan perintah berikut untuk mengunggah kode Anda ke GitHub:
 
