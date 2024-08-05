@@ -54,12 +54,14 @@
 1. Buka [https://github.com](https://github.com/) di browser web, lalu pilih **Sign in.
 ![500](assets/github.png)
 2. Masukkan alamat email anda dan masukkan kata sandi 
-![500](assets/github3.png)
-3. Untuk akun GitHub baru Anda, dan **Masukkan nama** pengguna juga. Selanjutnya, pilih apakah Anda ingin menerima pembaruan dan pengumuman melalui email, lalu pilih **Lanjutkan**.
+![300](assets/login2.png)
+3.Jika tidak memiliki akun klik tambahkan akun.
+![300](assets/login3.jpeg)
+
+4.Selanjutnya untuk akun GitHub baru Anda, dan **Masukkan nama email dan password email**. Selanjutnya, pilih apakah Anda ingin menerima pembaruan dan pengumuman melalui email, lalu pilih **Continue**.
 ![500](assets/github2.png)
 4. Verifikasi akun Anda dengan memecahkan teka-teki. Pilih tombol *Mulai Teka-teki* untuk melakukannya, lalu ikuti perintah.
-5. Setelah Anda memverifikasi akun Anda, pilih tombol *Buat akun* .
-6. Selanjutnya, GitHub mengirimkan kode peluncuran ke alamat email Anda. Ketik kode peluncuran tersebut *dalam dialog Masukkan kode* , lalu tekan *Enter*.
+5.  Selanjutnya, GitHub mengirimkan kode peluncuran ke alamat email Anda. Ketik kode peluncuran tersebut *dalam dialog Masukkan kode* , lalu tekan *Enter*.
 ![500](assets/github4.png)
 7. Di layar Tempat tim berkolaborasi dan mengirim, Anda dapat memilih apakah Anda ingin menggunakan akun Gratis atau akun Tim. Untuk memilih **akun Gratis** , pilih tombol Lewati personalisasi .
 8. GitHub membuka halaman yang dipersonalisasi di browser Anda.
@@ -102,7 +104,7 @@
 
 
 # Konfigurasi Awal di Git Bash
-1.**Konfigurasi Git Lokal:
+## **Konfigurasi Git Lokal:
    - Buka git di laptop/komputer anda.
    - Jalankan perintah berikut untuk mengatur identitas Anda:
   ~~~cs
@@ -113,7 +115,7 @@ untuk melihat apakah sudah terhubung konfigurasi git nya silakan ketik  git conf
  **contohnya:**
  ![](assets/gitlist.png)
      
-2.**Inisialisasi Git Lokal:
+## **Inisialisasi Git Lokal:
 -  Buat direktori baru untuk proyek Anda dan navigasikan ke direktori tersebut menggunakan Git bash. Kemudian, inisialisasi Git di direktori tersebut dengan menjalankan perintah:
 ~~~cs
    git init
@@ -121,7 +123,7 @@ untuk melihat apakah sudah terhubung konfigurasi git nya silakan ketik  git conf
 **contohnya:
 ![](assets/gitinit.png)
 
-4.**Hubungkan ke Repositori GitHub:
+## **Hubungkan ke Repositori GitHub:
    - Jalankan perintah berikut untuk menghubungkan repositori lokal Anda ke repositori GitHub yang telah Anda buat sebelumnya:
 ~~~cs
      git remote add origin https://github.com/username/nama-repository.git
@@ -130,8 +132,20 @@ untuk melihat apakah sudah terhubung konfigurasi git nya silakan ketik  git conf
    **contohnya:
 ![](assets/gitremote.png)
 
-#  Git Status
-**Penjelasan:`git status` adalah perintah dalam sistem kontrol versi Git yang digunakan untuk menampilkan status dari repository Git saat ini. Perintah ini memberikan informasi mengenai:
+## **Tambahkan file ke repositori:
+
+Penjelasan : `git add` adalah salah satu perintah dasar dalam Git, dan sangat penting untuk memahami cara kerja Git. Di Git Bash, `git add` digunakan untuk menandai perubahan yang telah Anda buat di repositori Anda sehingga mereka bisa dimasukkan ke dalam commit berikutnya.
+- Perintah ini akan menambahkan semua file di direktori saat ini ke repositori.
+- Tambahkan file yang ingin Anda simpan di repositori Git dengan menjalankan perintah:
+~~~cs
+git add
+~~~
+**contohnya :
+![](assets/gitadd.png)
+
+*Secara singkat, `git add` adalah cara untuk memberi tahu Git bahwa Anda ingin menyertakan perubahan tertentu dalam commit berikutnya.*
+# Git Status
+Penjelasan: `git status` adalah perintah dalam sistem kontrol versi Git yang digunakan untuk menampilkan status dari repository Git saat ini. Perintah ini memberikan informasi mengenai:
 1. **Perubahan yang telah dilakukan:** Menunjukkan file-file yang telah diubah, tetapi belum di-stage untuk commit.
 2. **File yang di-stage:** Menunjukkan file-file yang telah di-stage dan siap untuk di-commit.
 3. **File yang belum dilacak:** Menunjukkan file-file baru yang belum ditambahkan ke dalam repository.
@@ -143,48 +157,90 @@ Dengan menggunakan `git status`, Kita dapat melihat status dari repository Kita
 ![](assets/status2.png)
 ![](assets/gitstatus.png)
 
-5.**Tambahkan file ke repositori: 
-   - Perintah ini akan menambahkan semua file di direktori saat ini ke repositori.
-   - Tambahkan file yang ingin Anda simpan di repositori Git dengan menjalankan perintah:
-~~~cs
-    git add .
-~~~    
-   **contohnya:
 
-![](assets/gitadd.png)
-6.**Buat Commit:
+# Git Push Origin (Master)
+Penjelasan : `git push origin master` adalah salah satu perintah penting dalam Git yang digunakan untuk mengirimkan perubahan dari repositori lokal ke repositori remote, Perintah ini akan mengunggah kode Anda ke repositori GitHub. Setelah ini, setiap kali Anda membuat perubahan pada kode, Anda dapat mengulangi langkah 4, 5,6 dan 7 untuk mengunggah perubahan tersebut ke GitHub.
+ **contohya :
+ ![](assets/gitorigin.png)
+ **Penjelasan setiap komponen dari perintah tersebut :
+- **`git push`** adalah perintah Git yang digunakan untuk mengirimkan perubahan yang telah Anda commit di repositori lokal ke repositori remote (misalnya, GitHub, GitLab, Bitbucket, atau server Git lainnya).
+- **`origin`**: Ini adalah nama default dari remote repository yang di-set saat pertama kali Anda meng-clone repositori atau menambahkan remote. `origin` adalah alias untuk URL repositori remote Anda. Anda dapat memiliki beberapa remote dengan nama yang berbeda, tetapi `origin` adalah yang paling umum digunakan.
+- **`master`**: Ini adalah nama cabang (branch) di repositori Anda yang ingin Anda push. Dalam konteks Git, `master` adalah cabang default utama dari repositori Git, meskipun banyak proyek modern beralih ke nama cabang default seperti `main` sebagai pengganti `master`.
+
+**Pesan kesalahan :**
+- **`fatal: 'origin' does not appear to be a git repository`**: Ini berarti Git tidak dapat menemukan remote repository dengan nama `origin`.
+- **`fatal: Could not read from remote repository`**: Ini berarti Git tidak dapat mengakses remote repository.
+
+- jika menunjukkan bahwa Git tidak dapat menemukan atau mengakses remote repository yang bernama `origin`
+- Kita Harus menambahkan semua perubahan yang ada di direktori kerja ke staging area menggunakan `git add .`
+- Jika Benar, Langkah Selanjutnya kita menggunakan perintah `git status` membantu kita memverifikasi bahwa perubahan sudah berada di staging area dan siap untuk di-commit.
+
+# LS
+ Penjelasan : Perintah `ls` adalah perintah yang sangat umum digunakan di lingkungan Unix/Linux, termasuk di Git Bash, yang merupakan emulator terminal untuk Windows yang menyediakan antarmuka shell Unix. Di Git Bash, `ls` digunakan untuk menampilkan daftar file dan direktori dalam direktori kerja saat ini. 
+ ~~~cs
+ ls
+ ~~~
+**contohnya:
+![](assets/gambarls.png)
+Perintah `ls` sangat fleksibel dan memiliki banyak opsi lain yang bisa digunakan untuk mengatur tampilan daftar isi direktori sesuai dengan kebutuhan pengguna.
+
+# CD
+Penjelasan : perintah `cd` (singkatan dari "change directory") digunakan untuk berpindah antara direktori, Dengan menggunakan perintah `cd` di Git Bash, Kita dapat dengan mudah menavigasi melalui berbagai direktori dalam sistem file Kita. Ini sangat berguna untuk mengelola proyek, mengakses file, dan menja lankan skrip atau program di lokasi yang berbeda.
+ ~~~cs
+ cd d:
+ ~~~
+ **contohnya: 
+ ![](assets/gambarcd.png)
+
+### Langkah-langkah yang Dijalankan :
+1. **Pindah ke drive `D:`** `cd d:`
+- **Penjelasan**: Perintah ini digunakan untuk berpindah ke drive `D:` di komputer Kita.
+- **Output**: `Odette@DESKTOP-A90B27J MINGW64 /d`
+
+2. **Pindah ke direktori `obsidian` di dalam drive `D:`**
+`cd obsidian`
+- **Penjelasan**: Perintah ini digunakan untuk berpindah ke direktori `obsidian` yang berada di dalam drive `D:`.
+
+3. **Pindah ke direktori `belajar_git` di dalam direktori `obsidian`**
+`cd belajar_git` 
+- **Penjelasan**: Perintah ini digunakan untuk berpindah ke direktori `belajar_git` yang berada di dalam direktori `obsidian`.
+- **Output**:
+`/d/obsidian/belajar_git `
+
+### Keseluruhan Proses
+- **Navigasi Awal:**
+Kita memulai di home directory (direktori awal) pada Git Bash. Perintah `cd d:` digunakan untuk berpindah dari home directory ke drive `D:`.
+
+- **Navigasi Kedua:**
+- Setelah berada di drive `D:`, Kita menggunakan perintah `cd obsidian` untuk masuk ke dalam direktori `obsidian` yang ada di drive `D:`.
+
+- **Navigasi Ketiga:**
+- Dari direktori `obsidian`, Kita menggunakan perintah `cd belajar_git`   untuk masuk ke dalam sub-direktori `belajar_git `.
+
+### Kesimpulan
+Kita telah menggunakan serangkaian perintah `cd` di Git Bash untuk menavigasi melalui sistem file dari drive `D:`, kemudian ke direktori `obsidian`, dan akhirnya ke direktori `belajar_git `. Setiap perintah `cd` digunakan untuk berpindah ke direktori yang lebih spesifik dalam hirarki direktori.
+# Buat Commit:
    - Jalankan perintah berikut untuk membuat commit dengan pesan yang jelas:
-   - Perintah git commit -m *"Pesan commit"* digunakan untuk menyimpan perubahan yang telah dilakukan pada repositori Git dengan menambahkan pesan
+   - Perintah git commit -m *"Pesan commit"* digunakan untuk menyimpan perubahan yang telah dilakukan pada repositori Git dengan menambahkan revisi
 ~~~cs
-     git commit -m "Pesan commit"
+     git commit -m "revisi"
 ~~~   
    **contohnya:
 
 ![](assets/gitcommit.png)
 
-   Unggah ke GitHub (git push origin master) :
-   Terakhir, jalankan perintah berikut untuk mengunggah kode Anda ke GitHub:
-
-7.**Unggah ke GitHub:
-   - Terakhir, jalankan perintah berikut untuk mengunggah kode Anda ke GitHub:
-~~~cs
-     git push -u origin master
-~~~
-
-   **contohnya:
-     ![[git push origin.jpg]]
-     maka akan tetampil bgini,berarti anda disuruh untuk login akun github mu yang sudh kamu buat 
-     ![[login.jpg]]
-   Perintah ini akan mengunggah kode Anda ke repositori GitHub. Setelah ini, setiap kali Anda membuat perubahan pada kode, Anda dapat mengulangi langkah 4, 5,6 dan 7 untuk mengunggah perubahan tersebut ke GitHub.
-# Buat File Lokal
-Bukalah gitbash lalu letakkan Gitbash ke tempat yang kalian ingin tuju,disini saya ambil dimana saya simpan data saya D:/obsidian
+### Penjelasan `git commit -m "revisi"`**
+- **`git commit`**: Perintah ini digunakan untuk menyimpan perubahan yang telah ditandai (staged) dengan `git add` ke dalam repositori Git. Ini menciptakan snapshot baru dari keadaan repositori pada saat commit.
+    
+- **`-m "revisi"`**: Opsi `-m` diikuti dengan string dalam tanda kutip digunakan untuk memberikan pesan commit. Pesan ini adalah deskripsi singkat mengenai perubahan yang telah Anda buat. Dalam contoh ini, `"revisi"` adalah pesan commit yang menjelaskan atau merangkum perubahan yang telah Anda lakukan.
+Secara singkat, `git commit -m "revisi"` digunakan untuk menyimpan perubahan ke repositori Git dengan pesan singkat yang menjelaskan perubahan tersebut.
+  
 ## Git version
-**Perintah  dalam Git version:
-   Perintah `git --version` digunakan untuk menampilkan versi Git yang terinstall pada komputer Anda.
-   
+Penjelasan : **`git version`** Menampilkan informasi versi dari perangkat lunak Git yang terpasang di komputer Anda. Ini membantu Anda memastikan bahwa Anda menggunakan versi yang benar atau terbaru dari Git.
 ~~~cs
 git --version
 ~~~
-
+ **contohnya :
+![](assets/gitver.png)
   **Fungsi: Perintah ini berguna untuk memeriksa versi Git yang Anda gunakan, yang dapat bermanfaat dalam mengidentifikasi dan mengatasi masalah kompatibilitas.
 
