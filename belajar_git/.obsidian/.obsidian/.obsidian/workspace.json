@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "0a5c4a3109e56c6d",
+    "id": "e670dd94b8c41c96",
     "type": "split",
     "children": [
       {
-        "id": "77c2fcca00516731",
+        "id": "990c7b7415a88803",
         "type": "tabs",
         "children": [
           {
-            "id": "1ebb4639befa359a",
+            "id": "24c48d3dce054203",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Belajar Git.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "31110a9df1fcbdfe",
+    "id": "2ed2c53eadb19045",
     "type": "split",
     "children": [
       {
-        "id": "d0b02b77fafabd93",
+        "id": "72b8439bd63e3637",
         "type": "tabs",
         "children": [
           {
-            "id": "3580abc8a41a42ac",
+            "id": "c9ded63a85f8b43d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "cf4dce1f7a578969",
+            "id": "55f3b82ef2157889",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "8a5b875d3d94e200",
+            "id": "b01505c9cf428b32",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "42739cd739c55ff2",
+    "id": "b10a7968d89c4827",
     "type": "split",
     "children": [
       {
-        "id": "07f5d9f79ef627c2",
+        "id": "f52e5a1dc93f3755",
         "type": "tabs",
         "children": [
           {
-            "id": "c9cc6c00b430fffa",
+            "id": "b850c4a217beecbd",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Belajar Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "aa9784d64b55904f",
+            "id": "f5d7d528b9876265",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Belajar Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "51e2ac89ca3cceb3",
+            "id": "d7ca5e6585b67fca",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,13 +114,11 @@
             }
           },
           {
-            "id": "f0ca220e0cd4b79e",
+            "id": "1d44cc08de5438bb",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Belajar Git.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,20 +138,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ebb4639befa359a",
-  "lastOpenFiles": [
-    "assets/github4.png",
-    "assets/github3.png",
-    "assets/github2.png",
-    "assets/github.png",
-    "assets/gambar20.png",
-    "assets/gambar19.png",
-    "assets/gambar18.png",
-    "assets/gambar17.png",
-    "assets/gambar16.png",
-    "assets/gambar12.png",
-    "assets/gambar15.png",
-    "Belajar Git.md",
-    "Capture.md"
-  ]
+  "active": "24c48d3dce054203",
+  "lastOpenFiles": []
 }
