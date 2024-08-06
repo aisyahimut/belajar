@@ -190,7 +190,9 @@ Penjelasan : perintah `cd` (singkatan dari "change directory") digunakan untuk b
  cd d:
  ~~~
  **contohnya: 
+ 
  ![](assets/gambarcd.png)
+ 
 
 ### Langkah-langkah yang Dijalankan :
 1. **Pindah ke drive `D:`** `cd d:`
