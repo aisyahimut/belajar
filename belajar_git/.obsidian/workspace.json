@@ -18,8 +18,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9efda3443857bf70",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Belajar Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Belajar Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Belajar Git.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,9 +151,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6887937c8b9f7488",
+  "active": "9efda3443857bf70",
   "lastOpenFiles": [
-    "BASIS DATA- XII.md",
-    "Belajar Git.md"
+    "Belajar Git.md",
+    "assets/raz6.PNG",
+    "assets/raz5.PNG",
+    "assets/raz4.PNG",
+    "assets/raz3.PNG",
+    "assets/raz2.PNG",
+    "assets/raz.PNG",
+    "BASIS DATA- XII.md"
   ]
 }
